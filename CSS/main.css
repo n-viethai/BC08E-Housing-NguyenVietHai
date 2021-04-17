@@ -1,0 +1,234 @@
+/* -----------------------Header-------------------------- */
+
+.header {
+  height: var(--header-height);
+  position: fixed;
+  width: 100%;
+  z-index: 999999999;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header .container {
+  padding: 0;
+  /* max-width: 128rem; */
+}
+
+.navbar {
+  line-height: initial;
+  padding: 0;
+}
+
+.header .navbar-brand {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.header .navbar-brand span {
+  color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.6rem;
+  padding: 0 2rem;
+}
+
+.navbar .navbar-nav .nav-item {
+  padding: 0 2rem;
+}
+
+.navbar .navbar-nav .nav-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--white-color);
+  margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  animation: fadeOut 0.5s linear forwards;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+  color: var(--primary-color) !important;
+}
+
+.navbar .navbar-nav .nav-item:focus-within::after {
+  opacity: 0;
+}
+
+.navbar .navbar-nav .nav-item:focus-within .nav-link {
+  color: var(--primary-color) !important;
+}
+
+/* -----------------------Carousel-------------------------- */
+
+.slider .carousel-inner .carousel-item .carousel-img {
+  width: 100%;
+  height: 100vh;
+}
+
+.slider .carousel-inner .carousel-item {
+  transition: initial;
+  animation: fadeIn 1s ease-in;
+}
+
+.carousel-caption {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  right: initial;
+  bottom: initial;
+  transform: translateY(-50%) translateX(-50%);
+  transition: initial;
+  animation: fadeIn--text 1s ease-in-out;
+}
+
+.carousel-caption h1 {
+  font-size: 8rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.carousel-caption p {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel .carousel-indicators {
+  top: initial;
+  right: initial;
+  left: 50%;
+  bottom: 5rem;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+.carousel-indicators .carousel-indicators-item {
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  opacity: 1;
+  transition: initial;
+  margin: 1rem;
+}
+
+.carousel-indicators .carousel-indicators-item.active {
+  background-color: var(--black-color);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+  background-image: initial;
+}
+
+.carousel-control.carousel-control-prev,
+.carousel-control.carousel-control-next {
+  width: 8rem;
+  height: 8rem;
+  top: 50%;
+  bottom: initial;
+  transform: translateY(-50%);
+}
+
+.carousel-control.carousel-control-prev {
+  left: 6rem;
+}
+
+.carousel-control.carousel-control-next {
+  right: 6rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  font-size: 4.8rem;
+  line-height: 8rem;
+}
+
+/* -----------------------About-------------------------- */
+
+.about {
+  padding-top: 7rem;
+}
+
+.about__container {
+}
+
+.about__title {
+  text-align: center;
+  margin-bottom: 4.4rem;
+}
+
+.about__title h1 {
+  font-size: 6.4rem;
+  font-weight: 400;
+}
+
+.about__list {
+}
+
+.about__list.about__list-cart {
+  display: flex;
+  margin-bottom: 2.8rem;
+}
+
+.about__item-content {
+  text-align: center;
+}
+
+.about__item-title {
+  font-size:3rem;
+  color: var(--primary-color);
+  margin-bottom: 2.8rem;
+}
+
+.about__item-cart {
+  width: calc(100% / 3);
+}
+
+.about__item-cart .about__item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.2rem;
+}
+
+.about__item-icon {
+  width: 10rem;
+  height: 10rem;
+  border: 0.1rem solid #7f7777;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+
+.about__item-icon:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.about__item-icon i{
+  line-height:10rem;
+  font-size:2.8rem;
+}
+
+.about__item-description {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.about__item-cart .about__item-description {
+  color:rgba(0, 0, 0, 0.5);
+}
