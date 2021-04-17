@@ -5,7 +5,7 @@
   position: fixed;
   width: 100%;
   z-index: 999999999;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.69);
 }
 
 .header .container {
@@ -158,7 +158,7 @@
 /* -----------------------About-------------------------- */
 
 .about {
-  padding-top: 7rem;
+  padding: 7rem 0;
 }
 
 .about__container {
@@ -177,7 +177,7 @@
 .about__list {
 }
 
-.about__list.about__list-cart {
+.about__list.about__list-card {
   display: flex;
   margin-bottom: 2.8rem;
 }
@@ -187,16 +187,17 @@
 }
 
 .about__item-title {
-  font-size:3rem;
+  font-size: 3rem;
   color: var(--primary-color);
   margin-bottom: 2.8rem;
+  font-weight: 400;
 }
 
-.about__item-cart {
+.about__item-card {
   width: calc(100% / 3);
 }
 
-.about__item-cart .about__item-content {
+.about__item-card .about__item-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,16 +213,15 @@
   margin-bottom: 1.2rem;
 }
 
-
 .about__item-icon:hover {
   color: var(--white-color);
   background-color: var(--primary-color);
   cursor: pointer;
 }
 
-.about__item-icon i{
-  line-height:10rem;
-  font-size:2.8rem;
+.about__item-icon i {
+  line-height: 10rem;
+  font-size: 2.8rem;
 }
 
 .about__item-description {
@@ -229,6 +229,57 @@
   line-height: 3.2rem;
 }
 
-.about__item-cart .about__item-description {
-  color:rgba(0, 0, 0, 0.5);
+.about__item-card .about__item-description {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* -----------------------Stats-------------------------- */
+
+.stats {
+  background-color: var(--primary-color);
+  padding: 7rem;
+}
+
+.stats__container {
+}
+
+.stats__title {
+  text-align: center;
+  margin-bottom: 4.4rem;
+}
+
+.stats__title h1 {
+  font-size: 6.4rem;
+  font-weight: 400;
+}
+
+.stats__list {
+  display: flex;
+}
+
+.stats__item {
+  width: 25%;
+  text-align: center;
+  padding: 0 1.6rem;
+}
+
+.stats__item-content {
+}
+
+.stats__item-number {
+  font-size: 6rem;
+  color: var(--white-color);
+}
+
+.stats__item-number--client ::after {
+  --max-number: 245;
+  font-size: 40px;
+  content: counter(count);
+  color: #fff;
+  animation: counter 1s linear forwards;
+  counter-reset: count 0;
+}
+
+.stats__item-info {
+  font-size: 3.2rem;
 }
