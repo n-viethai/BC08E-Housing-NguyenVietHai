@@ -426,6 +426,10 @@
   padding: 7rem 0;
 }
 
+.portfolio a {
+  display: block;
+}
+
 .portfolio__title {
   text-align: center;
   margin-bottom: 4rem;
