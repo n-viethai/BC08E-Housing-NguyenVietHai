@@ -67,6 +67,8 @@ h1 {
   color: var(--white-color);
 }
 
+/* ------------------animation--------------------- */
+
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -94,49 +96,33 @@ h1 {
   }
 }
 
-/* --------------------modal--------------------- */
 
-.my-modal {
-  width: 60rem;
-  display: none;
-}
+/* ------------------Back--To-TOP--------------------- */
 
-.modal__wrap {
+.ontop{
+  position: fixed ;
+  z-index: 99999999999999;
+  bottom: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
   text-align: center;
+  border: 1px solid rgba(0,0,0,0.4);
+  transition: all 0.3s linear;
 }
 
-.modal__title {
-  background-color: var(--primary-color);
-  padding: 2rem 0;
+.ontop:hover {
+  background-color: #777;
 }
 
-.modal__title h1 {
-  font-size: 4rem;
+.ontop:hover i {
   color: var(--white-color);
 }
 
-.modal__content{
-  padding: 2.4rem;
-}
-
-.modal__content-img {
-  width: 100%;
-  margin-bottom: 2.8rem;
-}
-
-.modal__content-description {
-  font-size: var(--font-size-normal);
-  text-align: justify;
-  line-height: var(--line-height);
-  color: rgba(0, 0, 0, 0.6);
-}
-
-/* fancybox */
-
-.fancybox-content {
-  padding: 0;
-}
-
-.fancybox-button svg {
-  color: red;
+.ontop i{
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: rgba(0,0,0,0.4);
 }
