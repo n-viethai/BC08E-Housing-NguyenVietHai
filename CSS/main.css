@@ -142,6 +142,7 @@
   top: 50%;
   bottom: initial;
   transform: translateY(-50%);
+  z-index: 999999999;
 }
 
 .carousel-control.carousel-control-prev {
