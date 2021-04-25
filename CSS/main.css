@@ -283,15 +283,6 @@
   letter-spacing: 0.8rem;
 }
 
-.stats__item-number--client ::after {
-  --max-number: 245;
-  font-size: 40px;
-  content: counter(count);
-  color: #fff;
-  animation: counter 1s linear forwards;
-  counter-reset: count 0;
-}
-
 .stats__item-info {
   font-size: 3.2rem;
   margin-top: 0.8rem;
